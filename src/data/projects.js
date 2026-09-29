@@ -1,13 +1,13 @@
 // TODO: replace these placeholders with your real projects.
 export const projects = [
   {
-    id: "project-one",
-    title: "Project One",
+    id: "itiplanner",
+    title: "ItiPlanner",
     description:
-      "A short sentence about what this project does and the problem it solves.",
-    stack: ["React", "Node.js", "PostgreSQL"],
+      "Turn a city's must-sees into a clash-free, day-by-day trip plan.",
+    stack: ["React", "TypeScript", "Netlify"],
     year: 2026,
-    href: "https://github.com/your-handle/project-one",
+    href: "https://itiplanner.netlify.app/",
   },
   {
     id: "project-two",
