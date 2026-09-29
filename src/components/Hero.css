@@ -21,19 +21,24 @@
 }
 
 .hero__intro {
-  max-width: 34ch;
-  font-family: var(--serif);
-  font-size: clamp(1.5rem, 2.6vw, 2.5rem);
-  line-height: 1.25;
-  word-spacing: 0.12em;
-  color: var(--fg-muted);
+  max-width: 40ch;
+  font-family: var(--sans);
+  font-size: clamp(1.25rem, 2.2vw, 2.25rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: var(--fg);
   text-wrap: pretty;
 }
 
 .hero__intro strong {
-  font-weight: inherit;
+  font-family: var(--serif);
+  font-size: 1.08em;
+  font-weight: 400;
   font-style: italic;
-  color: var(--fg);
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .hero__footer {

@@ -6,6 +6,7 @@
   --line-strong: rgba(244, 239, 230, 0.18);
 
   --serif: "Instrument Serif", "Times New Roman", serif;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "DM Mono", ui-monospace, Menlo, monospace;
 
   --gutter: clamp(20px, 4vw, 56px);
