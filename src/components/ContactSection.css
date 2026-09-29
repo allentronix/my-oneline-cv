@@ -1,14 +1,5 @@
 .contact-section {
   display: grid;
-  gap: 48px;
+  gap: 64px;
   padding: 120px var(--gutter);
-}
-
-.contact-section__heading {
-  max-width: 1400px;
-  font-family: var(--serif);
-  font-size: clamp(2.5rem, 6vw, 6rem);
-  line-height: 1.02;
-  letter-spacing: -0.02em;
-  text-wrap: pretty;
 }

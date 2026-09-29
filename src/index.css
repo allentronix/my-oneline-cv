@@ -4,6 +4,7 @@
   --fg-muted: rgba(244, 239, 230, 0.62);
   --line: rgba(244, 239, 230, 0.09);
   --line-strong: rgba(244, 239, 230, 0.18);
+  --error: #f0a28c;
 
   --serif: "Instrument Serif", "Times New Roman", serif;
   --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
