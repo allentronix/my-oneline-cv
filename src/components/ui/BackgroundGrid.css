@@ -1,0 +1,23 @@
+.background-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  padding-inline: 1vw;
+  pointer-events: none;
+}
+
+.background-grid__column {
+  border-left: 1px solid var(--line);
+}
+
+@media (max-width: 720px) {
+  .background-grid__column:nth-child(n + 3) {
+    display: none;
+  }
+
+  .background-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

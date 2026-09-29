@@ -1,0 +1,14 @@
+.section-label {
+  display: flex;
+  gap: 1.5em;
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.section-label__index {
+  color: var(--fg);
+}

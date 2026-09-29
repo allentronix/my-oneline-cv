@@ -1,0 +1,44 @@
+.nav-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  padding: var(--gutter);
+  background: var(--bg);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.35s ease,
+    visibility 0s linear 0.35s;
+}
+
+.nav-menu[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s ease;
+}
+
+.nav-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu__link {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 9vw, 7.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-menu__list:hover .nav-menu__link {
+  opacity: 0.4;
+}
+
+.nav-menu__list .nav-menu__link:hover,
+.nav-menu__list .nav-menu__link:focus-visible {
+  opacity: 1;
+}

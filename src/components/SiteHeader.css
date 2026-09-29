@@ -1,0 +1,20 @@
+.site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 10;
+  padding: 28px var(--gutter);
+}
+
+.site-header__name {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-header__menu-button {
+  position: fixed;
+  top: 18px;
+  right: clamp(16px, 2vw, 40px);
+  z-index: 30;
+}

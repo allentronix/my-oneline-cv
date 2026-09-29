@@ -1,14 +1,17 @@
-import heroImg from "../assets/hero.png";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "../assets/vite.svg";
+import SocialLinks from "./SocialLinks";
+import "./Hero.css";
 
-function Hero() {
+function Hero({ headline, linkedinUrl, githubUrl }) {
   return (
-    <div className="hero">
-      <img src={heroImg} className="base" width="170" height="179" alt="" />
-      <img src={reactLogo} className="framework" alt="React logo" />
-      <img src={viteLogo} className="vite" alt="Vite logo" />
-    </div>
+    <section className="hero" id="top">
+      <h1 className="hero__headline">{headline}</h1>
+      <div className="hero__footer">
+        <a className="hero__scroll-cue" href="#about">
+          Scroll ↓
+        </a>
+        <SocialLinks linkedinUrl={linkedinUrl} githubUrl={githubUrl} />
+      </div>
+    </section>
   );
 }
 

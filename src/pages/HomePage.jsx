@@ -1,51 +1,34 @@
-import { useState } from "react";
+import BackgroundGrid from "../components/ui/BackgroundGrid";
+import SiteHeader from "../components/SiteHeader";
 import Hero from "../components/Hero";
-import ResourceSection from "../components/ResourceSection";
-import { documentationLinks, socialLinks } from "../data/resources";
+import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
+import ContactSection from "../components/ContactSection";
+import SiteFooter from "../components/SiteFooter";
+import { profile } from "../data/profile";
+import { about } from "../data/about";
+import { projects } from "../data/projects";
+import { navLinks } from "../data/navigation";
 
 function HomePage() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <section id="center">
-        <Hero />
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((currentCount) => currentCount + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks" />
-
-      <section id="next-steps">
-        <ResourceSection
-          id="docs"
-          icon="documentation-icon"
-          title="Documentation"
-          description="Your questions, answered"
-          links={documentationLinks}
+      <BackgroundGrid />
+      <SiteHeader name={profile.name} links={navLinks} />
+      <main>
+        <Hero
+          headline={profile.headline}
+          linkedinUrl={profile.linkedinUrl}
+          githubUrl={profile.githubUrl}
         />
-        <ResourceSection
-          id="social"
-          icon="social-icon"
-          title="Connect with us"
-          description="Join the Vite community"
-          links={socialLinks}
+        <AboutSection about={about} />
+        <ProjectsSection projects={projects} />
+        <ContactSection
+          linkedinUrl={profile.linkedinUrl}
+          githubUrl={profile.githubUrl}
         />
-      </section>
-
-      <div className="ticks" />
-      <section id="spacer" />
+      </main>
+      <SiteFooter name={profile.name} />
     </>
   );
 }

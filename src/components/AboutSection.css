@@ -1,0 +1,45 @@
+.about-section {
+  display: grid;
+  gap: 48px;
+  padding: 120px var(--gutter);
+}
+
+.about-section__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px clamp(48px, 6vw, 120px);
+}
+
+.about-section__intro {
+  display: grid;
+  align-content: start;
+  gap: 24px;
+}
+
+.about-section__heading {
+  margin-bottom: 16px;
+  font-family: var(--serif);
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-wrap: pretty;
+}
+
+.about-section__paragraph {
+  max-width: 60ch;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--fg-muted);
+}
+
+.about-section__details {
+  display: grid;
+  align-content: start;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .about-section__columns {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+.skill-groups {
+  margin: 0;
+}
+
+.skill-groups__row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 8px 24px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.skill-groups__row:last-child {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.skill-groups__label {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.skill-groups__items {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.375rem, 1.8vw, 1.75rem);
+  line-height: 1.25;
+}
+
+@media (max-width: 520px) {
+  .skill-groups__row {
+    grid-template-columns: 1fr;
+  }
+}
