@@ -18,6 +18,7 @@ function HomePage() {
       <main>
         <Hero
           headline={profile.headline}
+          intro={profile.intro}
           linkedinUrl={profile.linkedinUrl}
           githubUrl={profile.githubUrl}
         />

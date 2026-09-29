@@ -7,8 +7,14 @@ export const about = {
     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
   ],
   skillGroups: [
-    { label: "Backend", items: ["Lorem", "Ipsum", "Dolor", "Sit amet", "Consectetur"] },
-    { label: "Frontend", items: ["Lorem", "Ipsum", "Dolor", "Sit amet", "Adipiscing"] },
+    {
+      label: "Backend",
+      items: ["Lorem", "Ipsum", "Dolor", "Sit amet", "Consectetur"],
+    },
+    {
+      label: "Frontend",
+      items: ["Lorem", "Ipsum", "Dolor", "Sit amet", "Adipiscing"],
+    },
     { label: "Platform", items: ["Lorem", "Ipsum", "Dolor", "Sit amet"] },
     { label: "Team", items: ["Lorem ipsum", "Dolor sit", "Amet consectetur"] },
   ],
@@ -23,7 +29,7 @@ export const about = {
       id: "bachelors",
       degree: "BSc Lorem Ipsum",
       institution: "Consectetur University, Adipiscing",
-      years: "2016 – 2020",
+      years: "2016 – 2029",
     },
   ],
 };

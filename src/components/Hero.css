@@ -7,14 +7,33 @@
   padding: clamp(120px, 18vh, 200px) var(--gutter) 40px;
 }
 
+.hero__content {
+  display: grid;
+  gap: clamp(24px, 4vh, 40px);
+}
+
 .hero__headline {
-  max-width: 1600px;
   font-family: var(--serif);
-  font-size: clamp(2.75rem, 7vw, 7.5rem);
+  font-size: clamp(3.5rem, 10vw, 10rem);
   font-weight: 400;
-  line-height: 1.02;
-  letter-spacing: -0.02em;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.hero__intro {
+  max-width: 34ch;
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.6vw, 2.5rem);
+  line-height: 1.25;
+  word-spacing: 0.12em;
+  color: var(--fg-muted);
   text-wrap: pretty;
+}
+
+.hero__intro strong {
+  font-weight: inherit;
+  font-style: italic;
+  color: var(--fg);
 }
 
 .hero__footer {

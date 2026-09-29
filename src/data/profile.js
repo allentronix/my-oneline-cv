@@ -1,8 +1,10 @@
 // TODO: replace placeholder values with your own details.
 export const profile = {
   name: "Madufor Chijioke",
-  headline:
-    "Software engineer devoted to building reliable, well-crafted web products driven by clarity and purpose.",
+  headline: "Software Engineer",
+  // Wrap text in **double asterisks** to highlight it.
+  intro:
+    "Focused on building reliable, user-focused applications with an emphasis on clean development and quality. Experienced in **QA and software testing**, with a passion for solving problems, exploring new technologies, and building software that works well.",
   linkedinUrl: "https://www.linkedin.com/in/your-handle",
   githubUrl: "https://github.com/your-handle",
 };
