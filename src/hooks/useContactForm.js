@@ -39,7 +39,8 @@ function useContactForm() {
       await sendContactMessage(values);
       setValues(EMPTY_VALUES);
       setStatus("success");
-    } catch {
+    } catch (error) {
+      console.error(error);
       setStatus("error");
     }
   }

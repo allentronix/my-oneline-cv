@@ -1,6 +1,25 @@
-// TODO: connect to a real backend or form service (e.g. Formspree, EmailJS, an API route).
-// Until then this only simulates a successful send — no message is delivered anywhere.
-export async function sendContactMessage(message) {
-  await new Promise((resolve) => setTimeout(resolve, 600));
-  console.info("[contactService] Not connected yet. Message not sent:", message);
+// Sends contact form messages through Formspree (https://formspree.io).
+// The form ID comes from VITE_FORMSPREE_FORM_ID in the .env file.
+const FORMSPREE_FORM_ID = import.meta.env.VITE_FORMSPREE_FORM_ID;
+
+// Resolves when Formspree accepts the message; throws if it could not be sent.
+export async function sendContactMessage({ name, email, message }) {
+  if (!FORMSPREE_FORM_ID) {
+    throw new Error(
+      "Contact form is not configured: set VITE_FORMSPREE_FORM_ID in .env",
+    );
+  }
+
+  const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({ name, email, message }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Formspree request failed with status ${response.status}`);
+  }
 }

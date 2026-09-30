@@ -11,15 +11,60 @@
 }
 
 .contact-form__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 16px 32px;
+  display: grid;
+  justify-items: start;
+  gap: 24px;
 }
 
 .contact-form__status {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  border: 1px solid var(--fg);
+  border-radius: 12px;
+  background: rgba(244, 239, 230, 0.08);
+  font-family: var(--sans);
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  line-height: 1.4;
+  color: var(--fg);
+  animation: contact-form-status-in 0.35s ease;
+}
+
+.contact-form__status span {
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--fg);
+  color: var(--bg);
   font-size: 15px;
-  color: var(--fg-muted);
+  font-weight: 500;
+}
+
+.contact-form__status[data-status="error"] {
+  border-color: var(--error);
+  background: rgba(240, 162, 140, 0.1);
+  color: var(--error);
+}
+
+.contact-form__status[data-status="error"] span {
+  background: var(--error);
+}
+
+@keyframes contact-form-status-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-form__status {
+    animation: none;
+  }
 }
 
 @media (max-width: 720px) {

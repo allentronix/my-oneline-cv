@@ -48,10 +48,20 @@ function ContactForm() {
         <Button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending…" : "Send message →"}
         </Button>
-        <p className="contact-form__status" role="status">
-          {status === "success" && "Thanks for reaching out — I’ll get back to you soon."}
-          {status === "error" && "Something went wrong. Please try again or reach me on LinkedIn."}
-        </p>
+        <div role="status">
+          {status === "success" && (
+            <p className="contact-form__status" data-status="success">
+              <span aria-hidden="true">✓</span>
+              Thanks for reaching out — I’ll get back to you soon.
+            </p>
+          )}
+          {status === "error" && (
+            <p className="contact-form__status" data-status="error">
+              <span aria-hidden="true">!</span>
+              Something went wrong. Please try again or reach me on LinkedIn.
+            </p>
+          )}
+        </div>
       </div>
     </form>
   );
