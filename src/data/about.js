@@ -1,35 +1,50 @@
-// TODO: replace the lorem ipsum placeholders with your real content.
+// In paragraphs, wrap text in **double asterisks** to highlight it.
 export const about = {
-  heading: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+  heading: "Computer Science Graduate",
   paragraphs: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+    "Recent **Computer Science graduate from the University of Debrecen**, graduating with an overall qualification of **Excellent**.",
+    "I started my journey focused on **frontend development**, with some experience in **backend development**, and later expanded my interests into **software testing and QA**. I enjoy working on projects, building things that people use every day, and turning ideas into practical solutions.",
+    "I’m always learning something new, exploring different technologies, and looking for opportunities to **collaborate, contribute, and grow as part of a team**.",
   ],
   skillGroups: [
     {
-      label: "Backend",
-      items: ["Lorem", "Ipsum", "Dolor", "Sit amet", "Consectetur"],
+      label: "Frontend",
+      items: ["JavaScript", "TypeScript", "React", "HTML5", "CSS"],
     },
     {
-      label: "Frontend",
-      items: ["Lorem", "Ipsum", "Dolor", "Sit amet", "Adipiscing"],
+      label: "Backend",
+      items: ["Node.js", "Python", "SQL", "REST APIs"],
     },
-    { label: "Platform", items: ["Lorem", "Ipsum", "Dolor", "Sit amet"] },
-    { label: "Team", items: ["Lorem ipsum", "Dolor sit", "Amet consectetur"] },
+    {
+      label: "QA & Testing",
+      items: [
+        "Selenium",
+        "Automated Testing",
+        "Manual Testing",
+        "Functional Testing",
+        "Regression Testing",
+        "Exploratory Testing",
+        "Test Execution",
+        "REST API Testing",
+        "Defect Tracking",
+        "Bug Reporting",
+        "Debugging",
+        "Quality Assurance",
+        "Software Testing Methodologies",
+      ],
+    },
+    {
+      label: "Team",
+      items: ["GitHub", "Jira", "Agile", "Problem Solving", "Team Collaboration"],
+    },
   ],
   education: [
     {
-      id: "masters",
-      degree: "MSc Lorem Ipsum",
-      institution: "Dolor Sit University, Amet",
-      years: "2022 – 2023",
-    },
-    {
-      id: "bachelors",
-      degree: "BSc Lorem Ipsum",
-      institution: "Consectetur University, Adipiscing",
-      years: "2016 – 2029",
+      id: "bsc-computer-science",
+      degree: "BSc Computer Science",
+      institution: "University of Debrecen, Hungary",
+      grade: "Excellent",
+      years: "Feb 2023 – Jun 2026",
     },
   ],
 };

@@ -1,5 +1,5 @@
 import SocialLinks from "./SocialLinks";
-import { parseHighlights } from "../utils/parseHighlights";
+import HighlightedText from "./ui/HighlightedText";
 import "./Hero.css";
 
 function Hero({ headline, intro, linkedinUrl, githubUrl }) {
@@ -8,13 +8,7 @@ function Hero({ headline, intro, linkedinUrl, githubUrl }) {
       <div className="hero__content">
         <h1 className="hero__headline">{headline}</h1>
         <p className="hero__intro">
-          {parseHighlights(intro).map((segment, index) =>
-            segment.isHighlighted ? (
-              <strong key={index}>{segment.text}</strong>
-            ) : (
-              segment.text
-            ),
-          )}
+          <HighlightedText text={intro} />
         </p>
       </div>
       <div className="hero__footer">

@@ -30,17 +30,6 @@
   text-wrap: pretty;
 }
 
-.hero__intro strong {
-  font-family: var(--serif);
-  font-size: 1.08em;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
-
 .hero__footer {
   display: flex;
   flex-wrap: wrap;

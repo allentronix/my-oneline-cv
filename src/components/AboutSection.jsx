@@ -1,4 +1,5 @@
 import SectionLabel from "./ui/SectionLabel";
+import HighlightedText from "./ui/HighlightedText";
 import SkillGroups from "./SkillGroups";
 import EducationList from "./EducationList";
 import "./AboutSection.css";
@@ -20,7 +21,7 @@ function AboutSection({ about }) {
           <p className="about-section__heading">{heading}</p>
           {paragraphs.map((paragraph) => (
             <p className="about-section__paragraph" key={paragraph}>
-              {paragraph}
+              <HighlightedText text={paragraph} />
             </p>
           ))}
         </div>
