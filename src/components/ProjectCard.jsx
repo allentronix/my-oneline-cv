@@ -1,3 +1,4 @@
+import HighlightedText from "./ui/HighlightedText";
 import "./ProjectCard.css";
 
 function ProjectCard({ project, index }) {
@@ -21,7 +22,9 @@ function ProjectCard({ project, index }) {
           </span>
         </h3>
         <div className="project-card__details">
-          <p className="project-card__description">{description}</p>
+          <p className="project-card__description">
+            <HighlightedText text={description} />
+          </p>
           <p className="project-card__meta">
             {stack.join(" · ")} — {year}
           </p>

@@ -1,4 +1,4 @@
-// TODO: replace these placeholders with your real projects.
+// In descriptions, wrap text in **double asterisks** to highlight it.
 export const projects = [
   {
     id: "itiplanner",
@@ -10,13 +10,13 @@ export const projects = [
     href: "https://itiplanner.netlify.app/",
   },
   {
-    id: "project-two",
-    title: "Project Two",
+    id: "playwright-ui-automation",
+    title: "Playwright UI Automation",
     description:
-      "A short sentence about what this project does and the problem it solves.",
-    stack: ["TypeScript", "Next.js"],
+      "Automated UI tests built to explore Playwright testing workflows and test organization, with tests carried out on the **Playwright website**.",
+    stack: ["Playwright", "TypeScript"],
     year: 2026,
-    href: "https://github.com/your-handle/project-two",
+    href: "https://github.com/allentronix/playwright-ui-automation-fundamentals",
   },
   {
     id: "istocktracker",
@@ -26,5 +26,13 @@ export const projects = [
     stack: ["React", "Netlify Functions", "REST APIs"],
     year: 2026,
     href: "https://istocktracker.netlify.app/",
+  },
+  {
+    id: "visualwrld",
+    title: "VisualWrld",
+    description: "A fast photography portfolio with full-quality previews.",
+    stack: ["React", "Cloudinary", "Vercel"],
+    year: 2026,
+    href: "https://www.visualwrld.space/",
   },
 ];
