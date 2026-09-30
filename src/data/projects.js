@@ -19,12 +19,12 @@ export const projects = [
     href: "https://github.com/your-handle/project-two",
   },
   {
-    id: "project-three",
-    title: "Project Three",
+    id: "istocktracker",
+    title: "iStockTracker",
     description:
-      "A short sentence about what this project does and the problem it solves.",
-    stack: ["Python", "FastAPI"],
-    year: 2025,
-    href: "https://github.com/your-handle/project-three",
+      "Live stock prices, charts and alerts, powered by four market-data APIs.",
+    stack: ["React", "Netlify Functions", "REST APIs"],
+    year: 2026,
+    href: "https://istocktracker.netlify.app/",
   },
 ];
