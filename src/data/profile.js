@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Madufor Chijioke",
+  name: "Madufor Allen Chijioke",
   headline: "Software Engineer",
   // Wrap text in **double asterisks** to highlight it.
   intro:
