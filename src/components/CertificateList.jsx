@@ -1,9 +1,10 @@
+import SectionLabel from "./ui/SectionLabel";
 import "./CertificateList.css";
 
 function CertificateList({ certificates }) {
   return (
     <div className="certificate-list">
-      <h3 className="certificate-list__title">Certificates</h3>
+      <SectionLabel as="h3">Certificates</SectionLabel>
       <ul className="certificate-list__items">
         {certificates.map((certificate) => (
           <li className="certificate-list__item" key={certificate.id}>
