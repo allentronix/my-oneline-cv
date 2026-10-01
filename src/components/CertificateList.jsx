@@ -1,0 +1,19 @@
+import "./CertificateList.css";
+
+function CertificateList({ certificates }) {
+  return (
+    <div className="certificate-list">
+      <h3 className="certificate-list__title">Certificates</h3>
+      <ul className="certificate-list__items">
+        {certificates.map((certificate) => (
+          <li className="certificate-list__item" key={certificate.id}>
+            <p className="certificate-list__name">{certificate.name}</p>
+            <p className="certificate-list__issuer">{certificate.issuer}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default CertificateList;

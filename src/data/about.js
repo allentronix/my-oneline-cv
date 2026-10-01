@@ -38,6 +38,33 @@ export const about = {
       items: ["GitHub", "Jira", "Agile", "Problem Solving", "Team Collaboration"],
     },
   ],
+  certificates: [
+    {
+      id: "its-python",
+      name: "Information Technology Specialist in Python",
+      issuer: "Pearson",
+    },
+    {
+      id: "its-javascript",
+      name: "IT Specialist - JavaScript",
+      issuer: "Certiport / Pearson VUE",
+    },
+    {
+      id: "nvidia-deep-learning",
+      name: "Fundamentals of Deep Learning",
+      issuer: "NVIDIA",
+    },
+    {
+      id: "azure-fundamentals",
+      name: "Microsoft Certified: Azure Fundamentals",
+      issuer: "Microsoft",
+    },
+    {
+      id: "its-html-css",
+      name: "IT Specialist - HTML and CSS",
+      issuer: "Certiport / Pearson VUE",
+    },
+  ],
   education: [
     {
       id: "bsc-computer-science",

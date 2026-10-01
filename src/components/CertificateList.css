@@ -1,0 +1,41 @@
+.certificate-list {
+  display: grid;
+  gap: 20px;
+}
+
+.certificate-list__title {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.certificate-list__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--sans);
+}
+
+.certificate-list__item {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding-left: 14px;
+  border-left: 1px solid var(--line-strong);
+}
+
+.certificate-list__name {
+  font-size: 1.0625rem;
+  line-height: 1.35;
+}
+
+.certificate-list__issuer {
+  font-size: 14px;
+  color: var(--fg-muted);
+}
