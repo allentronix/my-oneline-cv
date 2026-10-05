@@ -33,6 +33,6 @@ export const projects = [
     description: "A fast photography portfolio with full-quality previews.",
     stack: ["React", "Cloudinary", "Vercel"],
     year: 2026,
-    href: "https://www.visualwrld.space/",
+    href: "https://www.visualswrld.space/",
   },
 ];
