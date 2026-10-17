@@ -1,9 +1,9 @@
 :root {
-  --bg: #1b2d23;
-  --fg: #f4efe6;
-  --fg-muted: rgba(244, 239, 230, 0.62);
-  --line: rgba(244, 239, 230, 0.09);
-  --line-strong: rgba(244, 239, 230, 0.18);
+  --bg: #113023;
+  --fg: #f5f2e6;
+  --fg-muted: rgba(245, 242, 230, 0.75);
+  --line: rgba(245, 242, 230, 0.1);
+  --line-strong: rgba(245, 242, 230, 0.2);
   --error: #f0a28c;
 
   --serif: "Instrument Serif", "Times New Roman", serif;

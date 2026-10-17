@@ -23,7 +23,7 @@
   padding: 16px 22px;
   border: 1px solid var(--fg);
   border-radius: 12px;
-  background: rgba(244, 239, 230, 0.08);
+  background: rgba(245, 242, 230, 0.08);
   font-family: var(--sans);
   font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
   line-height: 1.4;
