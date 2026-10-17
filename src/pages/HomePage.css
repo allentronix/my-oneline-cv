@@ -1,0 +1,4 @@
+/* A full-width line between consecutive page sections. */
+.home-page > section + section {
+  border-top: 1px solid var(--line-strong);
+}

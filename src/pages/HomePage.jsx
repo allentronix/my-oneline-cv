@@ -1,4 +1,3 @@
-import BackgroundGrid from "../components/ui/BackgroundGrid";
 import SiteHeader from "../components/SiteHeader";
 import Hero from "../components/Hero";
 import AboutSection from "../components/AboutSection";
@@ -9,13 +8,13 @@ import { profile } from "../data/profile";
 import { about } from "../data/about";
 import { projects } from "../data/projects";
 import { navLinks } from "../data/navigation";
+import "./HomePage.css";
 
 function HomePage() {
   return (
     <>
-      <BackgroundGrid />
       <SiteHeader name={profile.name} links={navLinks} />
-      <main>
+      <main className="home-page">
         <Hero
           headline={profile.headline}
           intro={profile.intro}
