@@ -2,6 +2,7 @@
   --bg: #113023;
   --fg: #f5f2e6;
   --fg-muted: rgba(245, 242, 230, 0.75);
+  --line-faint: rgba(245, 242, 230, 0.04);
   --line: rgba(245, 242, 230, 0.1);
   --line-strong: rgba(245, 242, 230, 0.2);
   --error: #f0a28c;
@@ -36,6 +37,11 @@ body {
   margin: 0;
   min-height: 100svh;
   background: var(--bg);
+}
+
+/* Own stacking context so the background grid (z-index: -1) sits above the body background. */
+#root {
+  isolation: isolate;
 }
 
 h1,

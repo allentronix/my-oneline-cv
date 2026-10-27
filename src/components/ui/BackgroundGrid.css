@@ -1,0 +1,20 @@
+.background-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  padding-inline: 1vw;
+  pointer-events: none;
+}
+
+.background-grid__column {
+  border-left: 1px solid var(--line-faint);
+}
+
+@media (max-width: 720px) {
+  .background-grid__column:nth-child(n + 3) {
+    display: none;
+  }
+}

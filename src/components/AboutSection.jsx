@@ -9,11 +9,7 @@ function AboutSection({ about }) {
   const { heading, paragraphs, skillGroups, certificates, education } = about;
 
   return (
-    <section
-      className="about-section"
-      id="about"
-      aria-labelledby="about-title"
-    >
+    <section className="about-section" id="about" aria-labelledby="about-title">
       <SectionLabel index="01" id="about-title">
         About
       </SectionLabel>

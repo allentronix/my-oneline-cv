@@ -1,3 +1,4 @@
+import BackgroundGrid from "../components/ui/BackgroundGrid";
 import SiteHeader from "../components/SiteHeader";
 import Hero from "../components/Hero";
 import AboutSection from "../components/AboutSection";
@@ -13,6 +14,7 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <>
+      <BackgroundGrid />
       <SiteHeader name={profile.name} links={navLinks} />
       <main className="home-page">
         <Hero
